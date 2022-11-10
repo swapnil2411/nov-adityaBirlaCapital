@@ -729,6 +729,7 @@
     cursor: pointer;
     background: #c7222a;
     border-radius: 100%;
+    display: none;
 }
 
 .collapse_benefits_flex svg{

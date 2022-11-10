@@ -231,6 +231,10 @@
     .desktop_eligibilty_period .panel{
         padding: 40px 20px;
     }
+
+    .collapse_benefits_flex{
+        display: block;
+    }
 }
 
 @media (max-width: 480px){
