@@ -1,0 +1,741 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PF Encore Sans Pro Regular';
+}
+
+/* Font Files */
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/HelveticaNeue-MediumExt.woff2') format('woff2'),
+        url('../fonts/HelveticaNeue-MediumExt.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PF Handbook Pro Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('PF Handbook Pro Regular'), url('../fonts/PFHandbookProRegular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'PF Encore Sans Pro';
+    src: url('../fonts/PFEncoreSansPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+    
+@font-face {
+    font-family: 'PF Handbook Pro Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: local('PF Handbook Pro Thin'), url('../fonts/PFHandbookProThin.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'PF Handbook Pro Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('PF Handbook Pro Black'), url('../fonts/PFHandbookProBlack.woff') format('woff');
+}
+    
+@font-face {
+    font-family: 'PF Handbook Pro Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('PF Handbook Pro Bold'), url('../fonts/PFHandbookProBold.woff') format('woff');
+}
+@font-face {
+    font-family: 'PF Encore Sans Pro Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('PF Handbook Pro Bold'), url('../fonts/PFEncoreSansProRegular.woff') format('woff');
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mb-10{
+    margin-bottom: 10px;
+}
+
+.mb-15{
+    margin-bottom: 15px;
+}
+
+.img-fluid{
+    max-width: 100%;
+    display: block;
+}
+
+.sec_header h2{
+    font-family: 'PF Handbook Pro Regular';
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.banner_area{
+    background: rgb(234,234,234);
+}
+
+.banner_img img{
+    max-width: unset;
+    width: 100%;
+}
+
+.mobile-banner{
+    display: none;
+}
+
+.banner_form form{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.banner_form{
+    padding: 30px 15px 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: rgb(234,234,234);
+    background-image: linear-gradient(-180deg, rgba(255,255,255,1) 30%, rgba(234,234,234,1) 100%);
+}
+
+.banner_form form .form-element{
+    flex: 0 0 33.33%;
+    max-width: calc(33.33% - 60px);
+}
+
+.banner_form form .form-footer{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.banner_form form .form-footer .form-element:nth-child(1){
+    flex: 0 0 60%;
+    max-width: 60%;
+    margin-top: 30px;
+    padding-right: 100px;
+}
+
+.banner_form form .form-footer .form-element:nth-child(2){
+    flex: 0 0 32%;
+    max-width: 32%;
+    margin-top: 30px;
+}
+
+.banner_form form .form-element input{
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #d7d7d7;
+    padding: 0 15px;
+    text-align: left;
+    background-color: transparent;
+}
+
+.banner_form form .form-element input:focus{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.banner_form form .form-footer .form-element:nth-child(1) p{
+    font-size: 13px;
+    color: #181818;
+}
+
+.banner_form form .form-element .orange-btn{
+    height: 50px;
+    width: 100%;
+    background: #faa619;
+    border: none;
+    border-radius: 5px;
+    color: #181818;
+    font-size: 28px;
+    font-family: 'PF Handbook Pro Bold';
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.banner_form form .form-element .orange-btn:hover{
+    background: #dd1b31;
+    color: #fff;
+}
+
+.plans_area .inner_plan_area{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.plans_area .inner_plan_area .left_area{
+    flex: 0 0 65%;
+    max-width: 65%;
+}
+
+.plans_area .inner_plan_area .left_area img{
+    width: 100%;
+    max-width: unset;
+}
+
+.plans_area .inner_plan_area .right_area{
+    flex: 0 0 35%;
+    max-width: 35%;
+    background-image: url('../img/plan-texture.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.plans_area .inner_plan_area .right_area .box{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    margin-left: -50px;
+}
+
+.plans_area .inner_plan_area .right_area .box:not(:last-child){
+    margin-bottom: 25px;
+}
+
+.plans_area .inner_plan_area .right_area .box .percentage{
+    background: #dd1b31;
+    border: 3px solid #fff;
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin-right: 30px;
+    flex-direction: column;
+}
+
+.plans_area .inner_plan_area .right_area .box .percentage span{
+    color: #fff;
+    font-size: 14px;
+    font-family: 'PF Handbook Pro Bold';
+    font-weight: 600;
+    display: block;
+    position: relative;
+    left: -20px;
+    top: 10px;
+}
+
+.plans_area .inner_plan_area .right_area .box .percentage p{
+    font-size: 45px;
+    font-family: 'PF Handbook Pro Bold';
+    color: #fff;
+    letter-spacing: -0.5px;
+    margin-bottom: 0;
+}
+
+.plans_area .inner_plan_area .right_area .box .text p{
+    font-size: 24px;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 800;
+    color: #dd1b31;
+    line-height: 28px;
+}
+
+.key_highlights{
+    padding: 75px 0;
+    background: #e1e1e1;
+}
+
+.key_highlight_flex{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 60px 0;
+}
+
+.key_highlight_flex .highlight_box{
+    flex: 0 0 16.66%;
+    max-width: calc(16.66% - 20px);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 15px #bfbfbf;
+    transition: 0.5s ease-in-out all;
+}
+
+.key_highlight_flex .highlight_box:hover{
+    transform: translateY(-15px);
+}
+
+.key_highlight_flex .highlight_box:nth-child(odd){
+    background: #c7222a;
+}
+
+.key_highlight_flex .highlight_box:nth-child(even){
+    background: #fff;
+}
+
+.key_highlight_flex .highlight_box .box_icon{
+    margin-bottom: 15px;
+}
+
+.key_highlight_flex .highlight_box .box_content h3{
+    margin-bottom: 8px;
+    font-family: 'PF Handbook Pro Bold';
+    font-size: 24px;
+}
+
+.key_highlight_flex .highlight_box .box_content h3 sup{
+    font-size: 11px;
+}
+
+.key_highlight_flex .highlight_box:nth-child(odd) .box_content h3,
+.key_highlight_flex .highlight_box:nth-child(odd) .box_content p{
+    color: #fff;
+}
+
+.key_highlight_flex .highlight_box:nth-child(even) .box_content h3,
+.key_highlight_flex .highlight_box:nth-child(even) .box_content p{
+    color: #c7222a;
+}
+
+.covered_area{
+    padding: 50px 0;
+    position: relative;
+}
+
+.benefits_covered_flex{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 120px 0;
+}
+
+.benefits_covered_flex .covered_box{
+    flex: 0 0 16.66%;
+    max-width: calc(16.66% - 20px);
+    padding: 15px 10px;
+    border-radius: 12px;
+    /* box-shadow: 1px 1px 15px #e9e9e9; */
+    filter: drop-shadow(5px 5px 5px #ebebeb);
+    background: #ebebeb;
+    transition: 0.5s ease-in-out all;
+    min-height: 150px;
+    margin-bottom: 25px;
+}
+
+.benefits_covered_flex .covered_box:hover{
+    transform: translateY(-10px);
+    background-image: linear-gradient(180deg, #dfdfdf 30%, #ebebeb 100%);
+}
+
+.benefits_covered_flex .covered_box .icon{
+    text-align: center;
+}
+
+.benefits_covered_flex .covered_box .covered_txt p{
+    text-align: center;
+     font-family: 'PF Handbook Pro Bold';
+     color: #212121;
+     font-size: 18px;
+     line-height: 18px;
+}
+
+.benefits_covered_flex .covered_box .covered_txt p sup{
+     font-family: 'PF Handbook Pro Bold';
+    font-size: 12px;
+}
+
+.eligibility_period_accordion{
+    padding: 50px 120px;
+    background: #c7222a;
+}
+
+.desktop_eligibilty_period .panel_tabs,
+.desktop_eligibilty_period .panel_tabs li{
+    list-style: none;
+}
+
+.desktop_eligibilty_period .panel_tabs{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: max-content;
+    margin: 0 auto -20px;
+    background: #fff;
+    border-radius: 30px;
+    border: 1px solid #e6e6e6;
+    position: relative;
+    z-index: 1;
+}
+
+.desktop_eligibilty_period .panel_tabs li{
+    padding: 10px 20px;
+    color: #676767;
+    cursor: pointer;
+}
+
+.desktop_eligibilty_period .panel_tabs li:hover{
+    color: #c7222a;
+}
+
+.desktop_eligibilty_period .panel_tabs li.active{
+    border: 1px solid #c7222a;
+    border-radius: 30px;
+    color: #c7222a;
+}
+
+.desktop_eligibilty_period .panel{
+    padding: 50px 100px;
+    background: #fff;
+    display: none;
+    color: #676767;
+}
+
+.desktop_eligibilty_period .panel.active{
+    display: block;
+}
+
+.footer_area{
+    background: #7c7c7b;
+    padding: 50px 80px;
+}
+
+.footer_header{
+    position: relative;
+    padding: 0 15px;
+}
+
+.footer_header img{
+    position: absolute;
+    top: 0;
+    left: 14px;
+}
+
+.footer_header .footer_title{
+    font-size: 18px;
+    color: #fff;
+    font-family: 'PF Encore Sans Pro Regular';
+    text-align: center;
+    padding-top: 15px;
+}
+
+.footer_content{
+    margin-top: 25px;
+    font-family: 'PF Encore Sans Pro Regular';
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    padding: 0 15px;
+    text-align: left;
+    word-break: normal;
+}
+
+.overlay{
+    position: fixed;
+    background: #000;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: 9;
+}
+
+.otp_area{
+    width: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+    z-index: 10;
+    display: none;
+}
+
+.overlay.visible,
+.otp_area.visible{
+    display: block;
+}
+
+.title{
+    font-weight:600;
+    font-size:24px;
+    font-family: 'PF Handbook Pro Bold';
+  }
+  
+  .customBtn{
+    border-radius:0px;
+    padding:10px;
+  }
+  
+  form input{
+    display:inline-block;
+    width:50px;
+    height:50px;
+    text-align:center;
+  }
+
+  .otp_area .orange-btn{
+    height: 50px;
+    width: 100%;
+    background: #faa619;
+    border: none;
+    border-radius: 5px;
+    color: #181818;
+    font-size: 24px;
+    font-family: 'PF Handbook Pro Bold';
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .otp_area .orange-btn:hover{
+    background: #dd1b31;
+    color: #fff;
+}
+
+
+/* Plan Mobile Slider */
+.plans_slider{
+    display: none;
+    margin-top: -60px;
+}
+.swiper-slide{
+    text-align: center;
+}
+
+.swiper-slide .slider_percentage{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    height: 120px;
+    width: 120px;
+    margin: 10px auto 0;
+    border-radius: 100%;
+    border: 5px solid #fff;
+    background: #c7222a;
+    filter: blur(2px);
+}
+
+.swiper-slide .slider_content{
+   display: none;
+    /* transition: 0.35s ease-in-out all; */
+}
+
+.swiper-slide.swiper-slide-prev .slider_percentage{
+    margin-right: -90px;
+}
+
+.swiper-slide.swiper-slide-next .slider_percentage{
+    margin-left: -90px;
+}
+
+
+.swiper-slide.swiper-slide-active .slider_percentage{
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+    filter: blur(0px);
+}
+
+.swiper-slide.swiper-slide-active .slider_content{
+    display: block;
+}
+
+.swiper-slide .slider_percentage p{
+    font-family: 'PF Handbook Pro Bold';
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 32px;
+}
+
+.swiper-pagination{
+    display: none;
+}
+
+.swiper-slide.swiper-slide-active .slider_percentage p{
+    font-size: 45px;
+    margin-bottom: 0;
+}
+
+.slider_content h3{
+    font-family: 'Helvetica Neue';
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 15px;
+    color: #c7222a;
+}
+
+.slider_content p{
+    font-family: 'Helvetica Neue';
+    font-size: 12px;
+    color: #c7222a;
+}
+
+/* Key Highlights Slider */
+.key_highlight_slider{
+    display: none;
+    margin-top: 30px;
+}
+
+.key_highlight_slider .owl-carousel  .owl-stage{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.key_highlight_slider .owl-carousel .owl-item img{
+    max-width: 100%;
+    width: unset;
+}
+
+.key_highlight_slider .owl-carousel .owl-item .item .highlight_box{
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 340px;
+}
+
+.key_highlight_slider .owl-carousel .owl-item .item .highlight_box .box_icon{
+    margin-bottom: 15px;
+}
+
+.key_highlight_slider .owl-carousel .owl-item .item .highlight_box .box_content h3{
+    font-family: 'PF Handbook Pro Bold';
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.key_highlight_slider .owl-carousel .owl-item:nth-child(odd) .item .highlight_box{
+    background: #c7222a;
+}
+
+.key_highlight_slider .owl-carousel .owl-item:nth-child(odd) .item .highlight_box .box_content h3,
+.key_highlight_slider .owl-carousel .owl-item:nth-child(odd) .item .highlight_box .box_content p{
+    color: #fff;
+}
+
+.key_highlight_slider .owl-carousel .owl-item:nth-child(odd) .item .highlight_box .box_content p{
+    font-size: 14px;
+}
+
+.key_highlight_slider .owl-carousel .owl-item:nth-child(odd) .item .highlight_box .box_content h3{
+    color: #fff;
+}
+
+.key_highlight_slider .owl-carousel .owl-item:nth-child(even) .item .highlight_box{
+    background: #fff;
+}
+
+.key_highlight_slider .owl-carousel .owl-prev, .key_highlight_slider .owl-carousel .owl-next{
+    position: absolute;
+    left: -10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.key_highlight_slider .owl-carousel .owl-prev:focus,
+.key_highlight_slider .owl-carousel .owl-next:focus{
+    background: transparent;
+}
+
+.key_highlight_slider .owl-carousel .owl-prev:focus span,
+.key_highlight_slider .owl-carousel .owl-next:focus span{
+    color: #c7222a;
+}
+
+.key_highlight_slider .owl-carousel .owl-prev.disabled span,
+.key_highlight_slider .owl-carousel .owl-next.disabled span{
+    visibility: hidden;
+}
+
+.key_highlight_slider .owl-carousel .owl-prev{
+    top: calc(50% - 30px);
+}
+
+.key_highlight_slider .owl-carousel .owl-prev span,
+.key_highlight_slider .owl-carousel .owl-next span{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.collapse_benefits_flex{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    background: #c7222a;
+    border-radius: 100%;
+}
+
+.collapse_benefits_flex svg{
+    color: #fff;
+    font-size: 32px;
+}
+
+.collapse_benefits_flex svg.rotate{
+    transform: rotate(180deg);
+}

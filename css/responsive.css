@@ -1,0 +1,277 @@
+@media (max-width: 1199px){
+    .banner_form form .form-element .orange-btn{
+        font-size: 24px;
+    }
+
+    .otp_area .orange-btn{
+        height: 45px;
+        font-size: 22px;
+    }
+
+    .plans_area .inner_plan_area .right_area .box .percentage{
+        width: 90px;
+        height: 90px;
+    }
+
+    .plans_area .inner_plan_area .right_area .box .text p{
+        font-size: 16px;
+    }
+
+    .plans_area .inner_plan_area .right_area .box .percentage p{
+        font-size: 34px;
+    }
+
+    .plans_area .inner_plan_area .right_area .box .percentage span{
+        left: -14px;
+    }
+
+    .key_highlight_flex .highlight_box {
+        flex: 0 0 33.33%;
+        max-width: calc(33.33% - 20px);
+        min-height: 350px;
+        margin-bottom: 20px;
+    }
+
+    .benefits_covered_flex .covered_box{
+        flex: 0 0 20%;
+        max-width: calc(20% - 20px);
+    }
+}
+
+@media (max-width: 991px){
+    .banner_form form .form-footer .form-element:nth-child(1){
+        padding-right: 0;
+    }
+
+    .banner_form form .form-footer .form-element:nth-child(1) p{
+        font-size: 11px;
+    }
+
+    .benefits_covered_flex .covered_box{
+        flex: 0 0 25%;
+        max-width: calc(25% - 20px);
+    }
+
+    .benefits_covered_flex{
+        padding: 50px 80px 0;
+    }
+
+    .eligibility_period_accordion{
+        padding: 50px 80px;
+    }
+}
+
+@media (max-width: 767px){
+    .plans_area .inner_plan_area .left_area,
+    .plans_area .inner_plan_area .right_area{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .plans_area .inner_plan_area .right_area .box{
+        margin-left: 0;
+    }
+
+    .plans_area .inner_plan_area .right_area .box{
+        flex-direction: column;
+        padding: 0 15px;
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+
+    .plans_area .inner_plan_area .right_area .box .percentage{
+        margin-right: 0;
+    }
+
+    .plans_area .inner_plan_area .right_area .box .text p{
+        text-align: center;
+    }
+
+    .plans_area .inner_plan_area .right_area .box:not(:last-child){
+        margin-bottom: 0;
+    }
+
+    .plans_area .inner_plan_area .right_area .plan_boxes{
+        display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    padding: 30px 30px 60px;
+    margin-top: -60px;
+    }
+
+    .key_highlight_flex .highlight_box {
+        flex: 0 0 50%;
+        max-width: calc(50% - 10px);
+    }
+
+    .benefits_covered_flex .covered_box{
+        flex: 0 0 33.33%;
+        max-width: calc(33.33% - 20px);
+    }
+
+    .eligibility_period_accordion{
+        padding:50px;
+    }
+
+    .desktop_eligibilty_period .panel{
+        padding: 100px 50px;
+    }
+}
+
+@media (max-width: 600px){
+    .container{
+        max-width: 100%;
+    }
+
+    .banner_area{
+        position: relative;
+    }
+
+    .banner_form form .form-footer .form-element:nth-child(1) p{
+        font-size: 7px;
+        color: #000;
+        margin-bottom: 0;
+    }
+
+    .banner_form form .form-element .orange-btn{
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .banner_form form .form-element {
+        flex: 0 0 50%;
+        max-width: calc(50% - 15px);
+    }
+
+    .banner_form form .form-element input{
+        font-size: 14px;
+        height: 30px;
+    }
+
+    .banner_form form > .form-element:nth-child(3){
+        margin-top: 15px;
+    }
+
+    .banner_form form .form-footer .form-element:nth-child(1),
+    .banner_form form .form-footer .form-element:nth-child(2){
+        margin-top: 15px;
+    }
+
+    .mobile-banner{
+        display: block;
+    }
+
+    .desktop-banner{
+        display: none;
+    }
+
+    .banner_form{
+        position: absolute;
+        bottom: -55px;
+        padding: 15px 25px;
+        background: transparent;
+        background-image: linear-gradient(-180deg, rgba(255,255,255,0.9) 30%, rgba(234,234,234,1) 100%);
+    }
+
+    .plans_slider{
+        display: block;
+    }
+
+    .plans_area .inner_plan_area .right_area .plan_boxes{
+        display: none;
+    }
+
+    .plans_area{
+        padding-top: 55px;
+    }
+
+    .key_highlight_flex{
+        display: none;
+    }
+
+    .key_highlight_flex{
+        display: none;
+    }
+
+    .key_highlight_slider{
+        display: block;
+        width: 85%;
+        margin-left: auto;
+    }
+
+    .sec_header h2{
+        font-size: 32px;
+    }
+
+    .benefits_covered_flex .covered_box{
+        flex: 0 0 50%;
+        max-width: calc(50% - 20px);
+    }
+
+    .benefits_covered_flex{
+        padding: 50px 25px 0;
+        height: 745px;
+        overflow: hidden;
+        transition: 0.5s ease-in-out all;
+    }
+
+    .benefits_covered_flex.overflow_collapse{
+        height: 100%;
+        overflow: unset;
+    }
+
+    .eligibility_period_accordion{
+        padding: 50px 20px;
+    }
+
+    .desktop_eligibilty_period .panel{
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 480px){
+    .swiper-slide.swiper-slide-prev .slider_percentage{
+        margin-right: -70px;
+    }
+    
+    .swiper-slide.swiper-slide-next .slider_percentage{
+        margin-left: -70px;
+    }
+
+    .slider_content h3{
+        font-size: 16px;
+    }
+
+    .slider_content p{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 425px){
+    .swiper-slide.swiper-slide-prev .slider_percentage{
+        margin-right: -50px;
+    }
+    
+    .swiper-slide.swiper-slide-next .slider_percentage{
+        margin-left: -50px;
+    }
+}
+
+@media (max-width: 375px){
+    .banner_form{
+        bottom: -75px;
+        padding: 15px;
+    }
+
+    .plans_area{
+        padding-top: 75px;
+    }
+
+    .key_highlight_slider .owl-carousel .owl-item .item .highlight_box{
+        min-height: 395px;
+    }
+}
