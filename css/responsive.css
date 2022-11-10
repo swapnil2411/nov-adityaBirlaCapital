@@ -120,6 +120,74 @@
     .desktop_eligibilty_period .panel{
         padding: 100px 50px;
     }
+
+    .footer_area{
+        padding: 30px 20px;
+    }
+
+    .main_header .logo_container img{
+        max-width: 160px;
+    }
+
+    header .container{
+        padding: 0;
+    }
+
+    .main_header{
+        padding: 15px 20px;
+    }
+
+    .hamburger{
+        display: block;
+        right: 20px;
+    }
+    
+    .menu_container .menu_links{
+        position: fixed;
+        display: block;
+        left: 0;
+        height: 100vh;
+        top: 0;
+        width: 300px;
+        background: #c7222a;
+        padding: 25px 15px;
+        transition: 0.65s ease-in-out all;
+        left: -300px;
+        z-index: 101;
+    }
+
+    .menu_container .menu_links.show_menu_links{
+        left: 0;
+    }
+
+    .menu_container .menu_links li.closeLink{
+        display: block;
+        text-align: right;
+        margin-bottom: 25px;
+        cursor: pointer ;
+    }
+
+    .menu_container .menu_links li.closeLink span{
+        padding: 8px;
+        font-size: 12px;
+        color: #fff;
+        background: #da9089;
+    }
+
+    .menu_container .menu_links li{
+        margin-bottom: 15px;
+        padding-right: 0 !important;
+    }
+
+    .header_title .page_title{
+        padding: 10px 20px 10px 85px;
+        font-size: 20px;
+    }
+
+    .header_title .page_sub_title{
+        padding: 6px 20px 6px 85px;
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 600px){
@@ -234,6 +302,52 @@
 
     .collapse_benefits_flex{
         display: block;
+    }
+
+    .mobile_eligibility_period {
+        display: block;
+    }
+
+    .desktop_eligibilty_period{
+        display: none;
+    }
+
+    .footer_header{
+        display: none;
+    }
+
+    .footer_area{
+        padding: 0;
+    }
+
+    .bottom-footer{
+        display: block;
+    }
+
+    .footer_content{
+        margin: 0;
+        padding: 0;
+        padding: 30px 20px;
+        background: #58595b;
+    }
+
+    .footer_content p{
+        margin-bottom: 0;
+    }
+
+    .bottom-footer{
+        padding: 20px 40px;
+    }
+
+    .bottom-footer p{
+        margin-bottom: 0;
+        color: #fff;
+        margin-top: 20px;
+    }
+
+    .header_title .page_title,
+    .header_title .page_sub_title{
+        padding-left: 20px;
     }
 }
 
