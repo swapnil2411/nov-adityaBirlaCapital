@@ -44,6 +44,14 @@ $(document).ready(function(){
         },
     });
 
+    var swiper2 = new Swiper(".mySwiper", {
+        direction: "vertical",
+        // pagination: {
+        //   el: ".swiper-pagination",
+        //   clickable: true,
+        // },
+      });
+
     $('.slider_highlights').owlCarousel({
         // loop:true,
         margin:15,
@@ -81,4 +89,68 @@ $(document).ready(function(){
         $('.hamburger').css('display','block');
         $('body').css('overflow-y','auto');
     })
+
+    $('.columnone_slider').owlCarousel({
+        items:1,
+        merge:true,
+        loop:true,
+        margin:10,
+        video:true,
+        lazyLoad:true,
+        center:true,
+        dotsData: true,
+    })
+
+    $('.columntwo_slider').owlCarousel({
+        items:1,
+        merge:true,
+        loop:true,
+        margin:10,
+        video:true,
+        lazyLoad:true,
+        center:true,
+        dotsData: true,
+    })
+
+    $('.columnthree_slider').owlCarousel({
+        items:1,
+        merge:true,
+        loop:true,
+        margin:10,
+        video:true,
+        lazyLoad:true,
+        center:true,
+        dotsData: true,
+    })
+
+    
+    
+    var playerSettings = {
+          controls : ['play-large'],
+          fullscreen : { enabled: false},
+          resetOnEnd : true,
+          autoplay: true,
+          hideControls  :true,
+      clickToPlay:true,
+          keyboard : false,
+          
+        }
+    
+    const players = Plyr.setup('.js-player', playerSettings);
+    
+     players.forEach(function(instance,index) {
+                instance.on('play',function(){
+                    players.forEach(function(instance1,index1){
+                      if(instance != instance1){
+                            instance1.pause();
+                        }
+                    });
+                });
+            });
+    
+    $('.video-section').on('translated.owl.carousel', function (event) {
+      players.forEach(function(instance,index1){
+                      instance.pause();
+                    });
+    });
 })

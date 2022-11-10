@@ -488,6 +488,10 @@ header{
     background: #c7222a;
 }
 
+.desktop_eligibilty_period{
+    display: none;
+}
+
 .desktop_eligibilty_period .panel_tabs,
 .desktop_eligibilty_period .panel_tabs li{
     list-style: none;
@@ -727,6 +731,116 @@ header{
     color: #c7222a;
 }
 
+/* Video Slider */
+.video_carousel_area{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    padding: 30px 60px 0;
+}
+
+.video_carousel_area .video_column{
+    flex: 0 0 33.33%;
+    max-width: calc(33.33% - 20px);
+    /* background-image: url('../img/women-exercise.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+}
+
+/* .video_carousel_area .video_column .owl-item,
+.video_carousel_area .video_column .owl-item .item,
+.video_carousel_area .video_column .owl-item .item iframe{
+    height: 600px;
+} */
+
+.video_carousel_area .video_column .owl-item .item iframe{
+    background-image: url('../img/women-exercise.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .video_carousel_area .video_column .owl-item .item iframe {
+      /* height = 100 * (9 / 16) = 56.25 */
+      height: 50.25vw;
+    }
+  }
+      
+  @media (max-aspect-ratio: 16/9) {
+    .video_carousel_area .video_column .owl-item .item iframe {
+      /* width = 100 / (9 / 16) = 177.777777 */
+      width: 177.78vh;
+      height: 50.25vw;
+    }
+  }
+
+  .video_content{
+    background: #c7222ad1;
+    position: absolute;
+    padding: 40px 20px;
+    width: 100%;
+    bottom: 40px;
+  }
+
+  .video_content::before{
+    content: '';
+    position: absolute;
+    width: 25%;
+    height: 3px;
+    background: #fff;
+    display: block;
+    left: 0;
+    top: 0;
+  }
+
+  .video_content img{
+    max-width: 100%;
+    width: unset !important;
+    position: absolute;
+    left: 26%;
+    top: -19px;
+  }
+
+  .video_content .title{
+    font-size: 50px;
+    color: #fff;
+  }
+
+  .video_content .desc{
+    color: #fff;
+  }
+
+  .video_carousel_area .video_column .owl-dots{
+    position: absolute;
+    bottom: 55px;
+    left: 20px;
+    margin-top: 0 !important;
+  }
+
+  .video_carousel_area .video_column .owl-dots .owl-dot button{
+    background: transparent;
+    border: none;
+    color: #fff;
+  }
+
+  .video_carousel_area .video_column .owl-dots .owl-dot.active button{
+    text-decoration: underline;
+  }
+
+  .video_carousel_area .video_column .owl-dots .owl-dot:not(:last-child) button{
+    margin-right: 10px;
+  }
+
 /* Key Highlights Slider */
 .key_highlight_slider{
     display: none;
@@ -834,7 +948,7 @@ header{
 
 /* Mobile Check eligibility period */
 .mobile_eligibility_period {
-    display: none;
+    /* display: none; */
 }
 
 .mobile_eligibility_period .accordion >.card{
@@ -901,3 +1015,4 @@ header{
 .bottom-footer{
     display: none;
 }
+
