@@ -21,7 +21,7 @@ $(document).ready(function(){
         $('.otp_area').removeClass('visible');
     })
 
-    var swiper = new Swiper(".swiper-horizontal-3d", {
+    var swiper1 = new Swiper(".swiper-horizontal-3d", {
         loop: true,
         effect: "coverflow",
         grabCursor: true,
@@ -44,13 +44,16 @@ $(document).ready(function(){
         },
     });
 
-    var swiper2 = new Swiper(".mySwiper", {
-        direction: "vertical",
-        // pagination: {
-        //   el: ".swiper-pagination",
-        //   clickable: true,
-        // },
-      });
+   
+    var splide = new Splide( '.splide', {
+        direction: 'ttb',
+        height   : '100vh',
+        autoplay: true,
+        type    : 'loop',
+      } );
+      
+      splide.mount();
+
 
     $('.slider_highlights').owlCarousel({
         // loop:true,
@@ -123,7 +126,13 @@ $(document).ready(function(){
         dotsData: true,
     })
 
-    
+    var swiper2 = new Swiper(".mySwiper", {
+        direction: "vertical",
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
     
     var playerSettings = {
           controls : ['play-large'],

@@ -651,11 +651,11 @@ header{
     display: none;
     margin-top: -60px;
 }
-.swiper-slide{
+.plans_slider .swiper-slide{
     text-align: center;
 }
 
-.swiper-slide .slider_percentage{
+.plans_slider .swiper-slide .slider_percentage{
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -675,48 +675,48 @@ header{
     filter: blur(2px);
 }
 
-.swiper-slide .slider_content{
+.plans_slider .swiper-slide .slider_content{
    display: none;
     /* transition: 0.35s ease-in-out all; */
 }
 
-.swiper-slide.swiper-slide-prev .slider_percentage{
+.plans_slider .swiper-slide.swiper-slide-prev .slider_percentage{
     margin-right: -90px;
 }
 
-.swiper-slide.swiper-slide-next .slider_percentage{
+.plans_slider .swiper-slide.swiper-slide-next .slider_percentage{
     margin-left: -90px;
 }
 
 
-.swiper-slide.swiper-slide-active .slider_percentage{
+.plans_slider .swiper-slide.swiper-slide-active .slider_percentage{
     height: 150px;
     width: 150px;
     margin: 0 auto;
     filter: blur(0px);
 }
 
-.swiper-slide.swiper-slide-active .slider_content{
+.plans_slider .swiper-slide.swiper-slide-active .slider_content{
     display: block;
 }
 
-.swiper-slide .slider_percentage p{
+.plans_slider .swiper-slide .slider_percentage p{
     font-family: 'PF Handbook Pro Bold';
     color: #fff;
     margin-bottom: 0;
     font-size: 32px;
 }
 
-.swiper-pagination{
+.plans_slider .swiper-pagination{
     display: none;
 }
 
-.swiper-slide.swiper-slide-active .slider_percentage p{
+.plans_slider .swiper-slide.swiper-slide-active .slider_percentage p{
     font-size: 45px;
     margin-bottom: 0;
 }
 
-.slider_content h3{
+.plans_slider .slider_content h3{
     font-family: 'Helvetica Neue';
     font-size: 20px;
     font-weight: 600;
@@ -725,7 +725,7 @@ header{
     color: #c7222a;
 }
 
-.slider_content p{
+.plans_slider .slider_content p{
     font-family: 'Helvetica Neue';
     font-size: 12px;
     color: #c7222a;
@@ -839,6 +839,10 @@ header{
 
   .video_carousel_area .video_column .owl-dots .owl-dot:not(:last-child) button{
     margin-right: 10px;
+  }
+
+  .mobile-video-carousel{
+    display: none;
   }
 
 /* Key Highlights Slider */
@@ -1015,4 +1019,6 @@ header{
 .bottom-footer{
     display: none;
 }
+
+
 

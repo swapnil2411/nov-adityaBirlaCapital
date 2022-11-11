@@ -395,7 +395,6 @@
 
     .video_carousel_area{
         height: 100vh;
-        overflow: auto;
         padding: 0;
     }
 
@@ -414,6 +413,36 @@
     .video_carousel_area .video_column .owl-item .item iframe {
         height: 100vh;
       }
+
+      .desktop-video-carousel{
+        display: none;
+      }
+
+      .mobile-video-carousel{
+        display: block;
+      }
+
+      .splide__pagination{
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        -webkit-justify-content: flex-start;
+      }
+
+      .splide__pagination--ttb{
+        top: 35px;
+      }
+
+      .video_carousel_area .video_column .owl-item .item iframe{
+        background-image: url('../img/women-exercise.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        display: block;
+    }
+
+    .splide__arrows{
+        display: none;
+    }
 }
 
 @media (max-width: 480px){
