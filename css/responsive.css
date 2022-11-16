@@ -371,6 +371,7 @@
 
     .footer_content p{
         margin-bottom: 0;
+        word-break: break-word;
     }
 
     .bottom-footer{
@@ -461,14 +462,22 @@
     .slider_content p{
         font-size: 10px;
     }
+
+    .covered_feature_popup{
+        width: 90%;
+    }
+
+    .mobile_eligibility_period .panel-default>.panel-heading{
+        width: 100%;
+    }
 }
 
 @media (max-width: 425px){
-    .swiper-slide.swiper-slide-prev .slider_percentage{
+    .plans_slider .swiper-slide.swiper-slide-prev .slider_percentage{
         margin-right: -50px;
     }
     
-    .swiper-slide.swiper-slide-next .slider_percentage{
+    .plans_slider .swiper-slide.swiper-slide-next .slider_percentage{
         margin-left: -50px;
     }
 }
